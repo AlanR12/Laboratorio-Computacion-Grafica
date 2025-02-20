@@ -1,8 +1,3 @@
-Laboratorio-Computacion-Grafica
-
-Repositorio para las prácticas de la materia "Computación Gráfica e Interacción Humano-Computadora", Facultad de Ingeniería, UNAM; semestre 2025-2
-
-
 # 🎨 Laboratorio Computación Gráfica
 
 Bienvenido a este repositorio 📂, donde encontrarás las prácticas del Laboratorio de Computación Gráfica e Interacción Humano-Computadora.
