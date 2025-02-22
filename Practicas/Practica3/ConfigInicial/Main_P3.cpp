@@ -25,7 +25,7 @@ const GLint WIDTH = 800, HEIGHT = 600;
 
 int main() {
 	glfwInit();
-	//Verificaci�n de compatibilidad 
+	//Verificacion de compatibilidad 
 	// Set all the required options for GLFW
 	/*glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
@@ -40,7 +40,7 @@ int main() {
 
 	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
 
-	//Verificaci�n de errores de creacion  ventana
+	//Verificacion de errores de creacion  ventana
 	if (nullptr == window)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -52,7 +52,7 @@ int main() {
 	glfwMakeContextCurrent(window);
 	glewExperimental = GL_TRUE;
 
-	//Verificaci�n de errores de inicializaci�n de glew
+	//Verificacion de errores de inicializaci�n de glew
 
 	if (GLEW_OK != glewInit()) {
 		std::cout << "Failed to initialise GLEW" << std::endl;
