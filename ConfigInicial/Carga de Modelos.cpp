@@ -103,9 +103,9 @@ int main()
     Model moon((char*)"Models/Moon.obj");
     Model star((char*)"Models/star.obj");
     Model nave((char*)"Models/HN 48 Flying Car.obj");
-    /*Model casco((char*)"Models/Motorcycle_Helmet_v01_L3.obj");
+    Model casco((char*)"Models/Motorcycle_Helmet_v01_L3.obj");
     Model helmet((char*)"Models/10503_Football_helmet_v1_L3.obj");
-    Model inge((char*)"Models/10134_ConHelmet_v2_L3.obj");*/
+    Model inge((char*)"Models/10134_ConHelmet_v2_L3.obj");
     glm::mat4 projection = glm::perspective( camera.GetZoom( ), ( float )SCREEN_WIDTH/( float )SCREEN_HEIGHT, 0.1f, 100.0f );
     
   
@@ -181,24 +181,24 @@ int main()
         naveModel = glm::scale(naveModel, glm::vec3(0.025f, 0.025f, 0.025f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(naveModel));
         nave.Draw(shader);
-        ////Casco
-        //glm::mat4 cascoModel(1);
-        //cascoModel = glm::translate(cascoModel, glm::vec3(0.0f, 0.0f, 1.0f));
-        //cascoModel = glm::scale(cascoModel, glm::vec3(10.0f, 10.0f, 10.0f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(cascoModel));
-        //casco.Draw(shader);
-        ////Helmet
-        //glm::mat4 helmetModel(1);
-        //helmetModel = glm::translate(helmetModel, glm::vec3(0.0f, 0.0f, -2.0f));
-        //helmetModel = glm::scale(helmetModel, glm::vec3(0.01f, 0.01f, 0.01f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(helmetModel));
-        //helmet.Draw(shader);
-        ////Inge
-        //glm::mat4 ingeModel(1);
-        //ingeModel = glm::translate(ingeModel, glm::vec3(0.0f, 0.0f, 0.0f));
-        //ingeModel = glm::scale(ingeModel, glm::vec3(3.0f, 3.0f, 3.0f));
-        //glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(ingeModel));
-        //inge.Draw(shader);
+        //Casco
+        glm::mat4 cascoModel(1);
+        cascoModel = glm::translate(cascoModel, glm::vec3(0.0f, 0.0f, 1.0f));
+        cascoModel = glm::scale(cascoModel, glm::vec3(10.0f, 10.0f, 10.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(cascoModel));
+        casco.Draw(shader);
+        //Helmet
+        glm::mat4 helmetModel(1);
+        helmetModel = glm::translate(helmetModel, glm::vec3(0.0f, 0.0f, -2.0f));
+        helmetModel = glm::scale(helmetModel, glm::vec3(0.01f, 0.01f, 0.01f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(helmetModel));
+        helmet.Draw(shader);
+        //Inge
+        glm::mat4 ingeModel(1);
+        ingeModel = glm::translate(ingeModel, glm::vec3(0.0f, 0.0f, 0.0f));
+        ingeModel = glm::scale(ingeModel, glm::vec3(3.0f, 3.0f, 3.0f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(ingeModel));
+        inge.Draw(shader);
 
 
         // Swap the buffers
