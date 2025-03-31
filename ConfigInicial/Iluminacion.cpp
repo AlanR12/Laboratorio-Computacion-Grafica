@@ -413,8 +413,8 @@ int main()
         glUniformMatrix4fv(glGetUniformLocation(lampshader.Program, "model"), 1, GL_FALSE, glm::value_ptr(earthModel));
         tierra.Draw(lampshader);
         //Segundo Cubo
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
+        /*glBindVertexArray(VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);*/
 
 
         glBindVertexArray(0);
