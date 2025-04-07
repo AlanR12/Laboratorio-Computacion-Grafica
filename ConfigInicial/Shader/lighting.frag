@@ -1,6 +1,6 @@
 #version 330 core
 
-#define NUMBER_OF_POINT_LIGHTS 4
+#define NUMBER_OF_POINT_LIGHTS 1
 
 struct Material
 {
@@ -12,6 +12,7 @@ struct Material
 struct DirLight
 {
     vec3 direction;
+    
     vec3 ambient;
     vec3 diffuse;
     vec3 specular;

@@ -35,7 +35,7 @@ void MouseCallback(GLFWwindow *window, double xPos, double yPos);
 void DoMovement();
 
 // Window dimensions
-const GLuint WIDTH = 950, HEIGHT = 768; //1300 x 768
+const GLuint WIDTH = 1300, HEIGHT = 768; //1300 x 768
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
